@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <center>
+        <table border="10px" cellpadding="10px" cellspacing="3px">
+            <h1>Student</h1>
+            <tr>
+                <th>Sid</th>
+                <th>sname</th>
+                <th>sage</th>
+                <th>semail</th>
+            </tr>
+            {% for so in sdo %}
+            <tr>
+                <th>{{so.sid}}</th>
+                <th>{{so.sname}}</th>
+                <th>{{so.sage}}</th>
+                <th>{{so.semail}}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
