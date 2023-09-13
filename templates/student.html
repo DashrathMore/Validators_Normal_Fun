@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>student</title>
+    <style>
+        div
+        {
+
+            display: inline-block;
+            width:300px;
+        }
+        input
+        {
+            position: absolute;
+            left:100px;
+        }
+        .a
+        {
+            position:absolute;
+            left:10px;
+        }
+    </style>
 </head>
 <body>
-    <center>
+
+    <div>
         <form method="post">
             {% csrf_token %}
 
             {{sfo.as_p}}
 
-            <input type="submit" value="insert">
+            <input type="submit" value="insert" id="a"><br><br>
             <input type="reset" value="clear">
         </form>
-    </center>
+    </div>
 </body>
 </html>
